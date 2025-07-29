@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <title>Dashboard</title>
+  <style>
+    body { font-family: Poppins, sans-serif; text-align: center; margin-top: 50px; }
+    button { background: #ff5252; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; font-size: 16px; }
+    button:hover { background: #e04b4b; }
+     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f7f8fa; display: flex; flex-direction: column; align-items: center; padding: 2rem; }
+    h2 { margin-bottom: 1rem; color: #333; }
+    .todo-container { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 350px; }
+    .input-group { display: flex; margin-bottom: 1rem; }
+    #taskInput { flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; outline: none; }
+    button { padding: 0.5rem 1rem; border: none; margin-left: 5px; background: #4CAF50; color: #fff; border-radius: 5px; cursor: pointer; font-weight: 600; transition: 0.3s; }
+    button:hover { background: #388E3C; }
+    ul { list-style: none; width: 100%; }
+    li { display: flex; justify-content: space-between; align-items: center; background: #f1f1f1; padding: 0.5rem; border-radius: 5px; margin-bottom: 0.5rem; }
+    .delete-btn { background: #ff5252; padding: 0.3rem 0.6rem; border-radius: 5px; font-size: 0.8rem; cursor: pointer; }
+    .delete-btn:hover { background: #e04b4b; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Dashboard</h1>
+  <div class="log-out"> 
+    <button id="logoutBtn">Logout</button>
+    <script type="module" src="logout.js"></script>
+    </div>
+    <div class="todo-container">
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+      <script type="module" src="todo.js"></script>
+  </div>
+</body>
+</html>
